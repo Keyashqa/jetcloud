@@ -1,0 +1,301 @@
+/* Container & Layout */
+.coach-view-container {
+    height: 100%;
+    width: 100%;
+    background: #070b14;
+    color: #ece8e1;
+    font-family: 'Inter', system-ui, sans-serif;
+    overflow: hidden;
+}
+
+.coach-scroll-area {
+    padding: 24px;
+    height: 100%;
+}
+
+/* Section Wrapper */
+.coach-section {
+    background: #0b1220;
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    border-radius: 14px;
+    padding: 20px;
+    margin-bottom: 24px;
+}
+
+.coach-section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.03);
+    padding-bottom: 12px;
+}
+
+.coach-section-title {
+    color: #ff4655;
+    font-size: 12px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    font-weight: 800;
+    margin: 0;
+}
+
+.coach-section-confidence {
+    font-size: 11px;
+    color: #8b9bb4;
+    background: rgba(139, 155, 180, 0.1);
+    padding: 2px 8px;
+    border-radius: 4px;
+}
+
+/* Executive Summary */
+.exec-summary {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.exec-row {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.exec-label {
+    font-size: 10px;
+    color: #8b9bb4;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.exec-value {
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.exec-value.strong {
+    font-weight: 600;
+    color: #ffffff;
+}
+
+.exec-value.muted {
+    color: #9aa4b2;
+}
+
+.exec-posture {
+    margin-top: 8px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.posture-pill {
+    padding: 6px 16px;
+    background: rgba(255, 70, 85, 0.15);
+    color: #ff4655;
+    font-weight: 700;
+    border-radius: 4px;
+    font-size: 11px;
+    text-transform: uppercase;
+}
+
+/* Map Veto */
+.map-veto {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.map-decision {
+    display: flex;
+    gap: 16px;
+    padding: 12px;
+    background: rgba(255, 255, 255, 0.02);
+    border-left: 4px solid #333;
+    border-radius: 0 8px 8px 0;
+}
+
+.map-decision.ban {
+    border-color: #ef4444;
+}
+
+.map-decision.pick {
+    border-color: #22c55e;
+}
+
+.map-decision-type {
+    font-weight: 900;
+    font-size: 11px;
+    min-width: 40px;
+    padding-top: 2px;
+}
+
+.map-name {
+    font-weight: 700;
+    font-size: 15px;
+    margin-bottom: 2px;
+}
+
+.map-reason {
+    font-size: 13px;
+    color: #8b9bb4;
+    line-height: 1.4;
+}
+
+/* Agent Tendencies */
+.agent-tendencies {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.tendency-group {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.tendency-label {
+    color: #8b9bb4;
+    font-size: 13px;
+}
+
+.agent-badge-list {
+    display: flex;
+    gap: 6px;
+    flex-wrap: wrap;
+}
+
+.agent-badge {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 4px 10px;
+    border-radius: 4px;
+    font-size: 11px;
+    color: #fff;
+}
+
+.tendency-description {
+    font-size: 13px;
+    color: #8b9bb4;
+    font-style: italic;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    padding-top: 10px;
+}
+
+/* Target Priority */
+.target-priority {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 16px;
+}
+
+.target-block {
+    background: rgba(0, 0, 0, 0.2);
+    padding: 16px;
+    border-radius: 10px;
+    border-top: 2px solid transparent;
+}
+
+.target-block.primary {
+    border-top-color: #ff4655;
+}
+
+.target-block.secondary {
+    border-top-color: #f59e0b;
+}
+
+.target-title {
+    font-size: 10px;
+    text-transform: uppercase;
+    color: #8b9bb4;
+    margin-bottom: 8px;
+}
+
+.target-name {
+    font-size: 18px;
+    font-weight: 800;
+    color: #fff;
+}
+
+.target-reason {
+    font-size: 12px;
+    color: #8b9bb4;
+    margin-top: 8px;
+    line-height: 1.4;
+}
+
+/* Avoid Duels Block */
+.target-block.avoid {
+    border-top-color: #8b5cf6;
+    background: rgba(139, 92, 246, 0.08);
+}
+
+/* Practice Plan */
+.practice-plan {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.practice-card {
+    background: #070b14;
+    padding: 14px;
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.03);
+}
+
+.practice-theme {
+    color: #ff4655;
+    font-weight: 700;
+    font-size: 14px;
+    margin-bottom: 4px;
+}
+
+.practice-desc {
+    font-size: 13px;
+    color: #ece8e1;
+    line-height: 1.4;
+}
+
+/* Triggers */
+.trigger-item {
+    margin-bottom: 16px;
+    padding-left: 12px;
+    border-left: 2px solid #ff4655;
+}
+
+.trigger-signal {
+    font-weight: 700;
+    font-size: 14px;
+    color: #fff;
+    margin-bottom: 6px;
+}
+
+.trigger-details {
+    font-size: 12px;
+    color: #8b9bb4;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+/* Empty State */
+.coach-empty-state {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0.5;
+}
+
+.empty-icon {
+    font-size: 32px;
+    margin-bottom: 12px;
+}
+
+.empty-text {
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}

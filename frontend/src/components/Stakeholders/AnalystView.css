@@ -1,0 +1,361 @@
+:root {
+    --v-red: #ff4655;
+    --bg-deep: #060a13;
+    --bg-card: rgba(15, 23, 34, 0.8);
+    --border-white: rgba(255, 255, 255, 0.1);
+    --text-dim: rgba(255, 255, 255, 0.5);
+    --font-mono: 'JetBrains Mono', 'Fira Code', monospace;
+}
+
+.dashboard-wrapper {
+    background-color: var(--bg-deep);
+    color: #ececec;
+    min-height: 100vh;
+    padding: 40px;
+    font-family: 'Inter', system-ui, sans-serif;
+}
+
+/* --- Header Section --- */
+
+/* ─────────────────────────────
+   Dashboard Header (Metrics)
+───────────────────────────── */
+
+.dashboard-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding-bottom: 16px;
+    margin-bottom: 32px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+/* Left side */
+.header-title {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.header-tagline {
+    font-size: 22px;
+    font-weight: 900;
+    letter-spacing: -0.6px;
+    color: #f8fafc;
+    text-transform: uppercase;
+}
+
+/* Right side */
+.header-meta {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 4px;
+}
+
+.team-name {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.18em;
+    color: #94a3b8;
+}
+
+.match-id {
+    font-size: 13px;
+    font-weight: 600;
+    color: #e5e7eb;
+    opacity: 0.9;
+}
+
+
+
+
+/* --- Block Layout --- */
+.analyst-section {
+    margin-bottom: 40px;
+}
+
+/* Promote summary as top context */
+.analyst-section .block-summary {
+    font-size: 14px;
+    font-weight: 700;
+    color: #e5e7eb;
+    margin-bottom: 16px;
+    line-height: 1.55;
+}
+
+/* Remove sidebar layout entirely */
+.analyst-section .block-sidebar {
+    display: none;
+}
+
+/* Full-width metrics + charts */
+.analyst-section .block-container {
+    grid-template-columns: 1fr;
+    padding: 24px 28px;
+}
+
+/* Ensure clean vertical stacking */
+.analyst-section .block-main {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+
+
+.section-divider {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 16px;
+}
+
+.divider-line {
+    height: 1px;
+    flex: 1;
+    background: linear-gradient(90deg, transparent, var(--border-white), transparent);
+}
+
+.section-title {
+    color: var(--v-red);
+    font-size: 11px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.25em;
+    /* was 0.4em → too wide */
+}
+
+.section-summary {
+    color: white;
+    font-size: 11px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.25em;
+    /* was 0.4em → too wide */
+}
+
+
+.block-container {
+    display: grid;
+    grid-template-columns: 280px 1fr;
+    gap: 24px;
+    background: var(--bg-card);
+    border: 1px solid var(--border-white);
+    border-radius: 14px;
+    /* tighter */
+    padding: 22px;
+    /* tighter */
+    backdrop-filter: blur(10px);
+    /* slightly reduced */
+}
+
+
+/* --- Sidebar & Confidence --- */
+.block-sidebar {
+    border-right: 1px solid var(--border-white);
+    padding-right: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+
+.confidence-shield {
+    display: none;
+}
+
+.confidence-label {
+    font-size: 9px;
+    text-transform: uppercase;
+    color: var(--text-dim);
+    display: block;
+}
+
+.confidence-value {
+    font-family: var(--font-mono);
+    font-weight: 900;
+    font-size: 18px;
+}
+
+/* --- Metrics Grid --- */
+
+
+.metric-card::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 2px;
+    height: 100%;
+    background: var(--v-red);
+    opacity: 0.6;
+}
+
+
+.metric-card:hover::before {
+    height: 100%;
+}
+
+.metric-grid {
+    gap: 20px;
+}
+
+.metric-card {
+    padding: 18px;
+}
+
+.metric-value {
+    font-size: 22px;
+    font-weight: 900;
+}
+
+.metric-label {
+    font-size: 10px;
+    letter-spacing: 0.12em;
+}
+
+
+.metric-unit {
+    font-size: 10px;
+    color: var(--text-dim);
+}
+
+
+.metric-value-wrap {
+    display: flex;
+    align-items: baseline;
+    gap: 4px;
+}
+
+/* --- Flag Pills --- */
+.flag-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.flag-pill {
+    font-size: 12px;
+    font-weight: 700;
+    padding: 4px 8px;
+    border-radius: 6px;
+    border: 1px solid rgba(59, 130, 246, 0.25);
+    background: rgba(59, 130, 246, 0.08);
+    color: #93c5fd;
+}
+
+
+.flag-pill.warning {
+    border-color: rgba(239, 68, 68, 0.3);
+    background: rgba(239, 68, 68, 0.1);
+    color: #fca5a5;
+}
+
+/* Chart Container Styles */
+/* Give charts breathing room so value labels are never clipped */
+
+.chart-container {
+    padding-top: 32px;
+}
+
+.bar-chart-svg {
+    overflow: visible;
+}
+
+
+.chart-title {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #94a3b8;
+    margin-bottom: 1rem;
+}
+
+
+
+/* Ensure metric values display properly */
+.metric-value {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #f3f4f6;
+}
+
+.metric-unit {
+    font-size: 0.875rem;
+    color: #6b7280;
+    margin-left: 0.25rem;
+}
+
+/* Make sure the container is responsive */
+.block-container {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    gap: 2rem;
+}
+
+@media (max-width: 900px) {
+    .block-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Debug helper - remove in production */
+.debug-data {
+    background: #1e293b;
+    padding: 1rem;
+    margin: 1rem 0;
+    border-radius: 0.5rem;
+    font-family: monospace;
+    font-size: 0.75rem;
+    color: #94a3b8;
+    overflow: auto;
+    max-height: 300px;
+}
+
+/* ─────────────────────────────
+   Map Performance Overrides
+───────────────────────────── */
+
+.map-performance .block-container {
+    grid-template-columns: 1fr;
+    /* full-width charts */
+    padding: 24px;
+}
+
+
+.map-performance .block-sidebar {
+    border-right: none;
+    padding-right: 0;
+}
+
+
+/* Slim confidence for map blocks */
+.map-performance .confidence-shield {
+    display: none;
+}
+
+
+/* Summary becomes inline context */
+.map-performance .block-summary {
+    font-size: 13px;
+    color: var(--text-dim);
+    margin: 0;
+}
+
+/* Charts feel primary */
+.map-performance .chart-container {
+    margin-top: 12px;
+    font-weight: 700;
+    padding: 20px;
+    background: #020617;
+    border-radius: 12px;
+}
+
+.map-performance .bar-chart-svg {
+    overflow: visible;
+}
+
+.map-performance .chart-container {
+    padding-top: 32px;
+    /* space for value labels */
+}

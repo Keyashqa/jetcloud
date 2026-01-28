@@ -1,0 +1,153 @@
+/* Main Layout */
+.topbar-header {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #0b0f14;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    backdrop-filter: blur(10px);
+}
+
+/* Branding Section */
+.topbar-brand {
+    display: flex;
+    align-items: center;
+}
+
+.topbar-logo-text {
+    font-family: sans-serif;
+    font-size: 2rem;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+
+.topbar-logo-accent {
+    color: #e5484d;
+    font-weight: bold;
+    margin-left: 0.5rem;
+}
+
+/* Center Search Section */
+.topbar-search-area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.topbar-input-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+    padding: 4px 8px;
+    transition: border-color 0.3s ease;
+}
+
+.topbar-input-wrapper:focus-within {
+    border-color: #e5484d;
+}
+
+.topbar-input {
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #e5e7eb;
+    font-family: monospace;
+    font-size: 1rem;
+    width: 260px;
+    letter-spacing: 0.05em;
+}
+
+.topbar-input::placeholder {
+    color: #a3a3a3;
+}
+
+.topbar-btn {
+    background: transparent;
+    border: 1px solid transparent;
+    color: #e5484d;
+    font-family: monospace;
+    font-size: 0.75rem;
+    font-weight: bold;
+    letter-spacing: 0.2em;
+    padding: 6px 16px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.topbar-btn:hover:not(:disabled) {
+    background: rgba(229, 72, 77, 0.1);
+    border-color: rgba(229, 72, 77, 0.2);
+}
+
+.topbar-btn:disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+}
+
+/* Right Metadata Section */
+.topbar-metadata {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 1.5rem;
+    font-family: monospace;
+}
+
+.topbar-session-hud {
+    display: flex;
+    gap: 0.5rem;
+    font-size: 0.75rem;
+    background: rgba(255, 255, 255, 0.05);
+    padding: 4px 12px;
+    border-left: 2px solid #e5484d;
+}
+
+.topbar-id-label {
+    color: #a3a3a3;
+}
+
+.topbar-id-value {
+    color: #e5e7eb;
+    font-weight: bold;
+}
+
+.topbar-status {
+    color: #e5484d;
+    font-weight: bold;
+    font-size: 0.7rem;
+    letter-spacing: 0.1em;
+    animation: topbar-blink 2s infinite;
+}
+
+@keyframes topbar-blink {
+
+    0%,
+    100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.5;
+    }
+}
+
+.animate-spin-custom {
+    animation: spin 3s linear infinite;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
