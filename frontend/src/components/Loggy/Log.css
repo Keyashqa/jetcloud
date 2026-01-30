@@ -1,0 +1,76 @@
+/* Container */
+.logs-panel-container {
+    display: flex;
+    flex-direction: column;
+    height: 600px;
+    background-color: #0b0f14;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 12px;
+    font-family: 'JetBrains Mono', monospace;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+/* Header - Increased title size */
+.logs-panel-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.85rem 1.25rem;
+    /* Slightly more breathing room */
+    background-color: rgba(255, 255, 255, 0.02);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.logs-panel-title {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    color: #6b7280;
+    font-size: 12px;
+    /* Increased from 10px */
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 0.2em;
+}
+
+/* Log Entry Styling - Increased body text */
+.logs-entry {
+    display: flex;
+    gap: 0.5rem;
+    font-size: 0.65rem;
+    /* Increased from 0.75rem */
+    line-height: 1.6;
+}
+
+.logs-timestamp {
+    color: #4b5563;
+    font-size: 11px;
+    /* Increased from 10px */
+    min-width: 60px;
+    padding-top: 2px;
+}
+
+.logs-author {
+    color: #e5484d;
+    font-weight: 900;
+    text-transform: uppercase;
+    font-size: 11px;
+    /* Increased from 10px */
+    letter-spacing: 0.1em;
+    margin-right: 0.5rem;
+}
+
+.logs-text {
+    color: #9ca3af;
+    letter-spacing: 0.02em;
+}
+
+.logs-empty-state {
+    margin-top: 2rem;
+    text-align: center;
+    color: #374151;
+    font-style: italic;
+    font-size: 0.9rem;
+    /* Increased from 0.75rem */
+}

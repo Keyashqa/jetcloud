@@ -11,7 +11,7 @@ const managerVisualBlocks = {
             }
         },
         {
-            type: "dependency_profile",
+            type: "dependency_profile", 
             title: "Dependency Profile",
             confidence: 0.70,
             data: {

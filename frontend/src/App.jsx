@@ -1,12 +1,12 @@
 import "./dashboard.css";
 import TopBar from "./components/TopBar/TopBar";
-import LogsPanel from "./components/Logs/LogsPanel";
+import LogsPanel from "./components/Loggy/Log";
 import StakeholderView from "./components/Stakeholders/StakeholderView";
 
 function App() {
   return (
     <div className="dashboard-root">
-      <div style={{ maxWidth: "100%", margin: "0 auto", padding: "2px" }}>
+      <div style={{ maxWidth: "100%" }}>
         <TopBar />
 
         <div
