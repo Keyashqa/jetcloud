@@ -7,6 +7,8 @@ import './TopBarCss.css';
 const TopBar = () => {
     const [localTarget, setLocalTarget] = useState('');
     const { isStreaming, userId, sessionId } = useStreamStore();
+    const [showMockNotice, setShowMockNotice] = useState(true);
+
 
     const handleRun = () => {
         if (!localTarget.trim()) return;
@@ -16,6 +18,21 @@ const TopBar = () => {
 
     return (
         <header className="topbar-header">
+            {showMockNotice && (
+                <div className="mock-data-popup">
+                    <span>
+                        ⚠ Initial response from agents are running on <strong>mock data</strong>
+                        ...Execute with a valid team name to get real-time data.
+                    </span>
+                    <button
+                        className="mock-data-close"
+                        onClick={() => setShowMockNotice(false)}
+                    >
+                        ✕
+                    </button>
+                </div>
+            )}
+
             {/* Branding - Stacked Layout */}
             <div className="topbar-brand">
                 <div className="flex flex-col items-start">

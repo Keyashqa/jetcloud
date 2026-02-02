@@ -25,7 +25,7 @@ APP_NAME = "simple_app"
 USER_ID = "user_1"
 SESSION_ID = "session_1"
 INITIAL_STATE = {
-    "team_name" : "NRG"
+    "team_name" : "3DMAX"
 }
 
 session_service = InMemorySessionService()

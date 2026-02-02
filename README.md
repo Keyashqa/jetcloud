@@ -159,4 +159,4 @@ The primary endpoint for initiating an analysis session. Streams agent events in
 Downloads all generated analysis artifacts (CSVs) as a ZIP file.
 
 
-*Built with ❤️ for the JetBrains Hackathon 2026* 🚀
+*Built with ❤️ by JetCloud* 🚀

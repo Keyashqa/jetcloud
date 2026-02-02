@@ -73,6 +73,18 @@ class TeamStatsAnalyzerAgent(BaseAgent):
     # ─────────────────────────────────────────────
     # Helper
     # ─────────────────────────────────────────────
+    def _has_sufficient_data(self, state: dict) -> bool:
+        team_stats = state.get("team_stats", {})
+        series_overview = state.get("series_overview", {})
+        player_stats = state.get("player_stats", [])
+
+        return (
+            team_stats.get("games_played", 0) >= 5
+            and series_overview.get("total_series", 0) >= 2
+            and len(player_stats) >= 3
+        )
+
+    # Save DataFrame to CSV
     def _save_df(self, df: pd.DataFrame, filename: str):
         output_dir = Path("app/scouting_outputs")
         output_dir.mkdir(parents=True, exist_ok=True)
@@ -781,6 +793,40 @@ class TeamStatsAnalyzerAgent(BaseAgent):
             return
 
         self._debug_print_state(state)
+
+        # ─────────────────────────────────────────
+        # 🚫 DATA SUFFICIENCY GATE (CRITICAL)
+        # ─────────────────────────────────────────
+        if not self._has_sufficient_data(state):
+            logger.warning(
+                f"[{self.name}] Insufficient data detected. "
+                f"Skipping stakeholder LLM analysis."
+            )
+
+            yield Event(
+                author=self.name,
+                content=types.Content(
+                    role="assistant",
+                    parts=[types.Part(
+                        text=(
+                            "Insufficient competitive data available.\n"
+                            "Only descriptive statistics were generated.\n"
+                            "Strategic, coaching, and management analyses were intentionally skipped."
+                        )
+                    )]
+                )
+            )
+
+            return  # 🔥 THIS IS WHAT STOPS THE LLMs
+
+        # ─────────────────────────────────────────
+        # 🧠 LLMs ONLY RUN IF DATA IS SUFFICIENT
+        # ─────────────────────────────────────────
+        logger.info(f"[{self.name}] Running parallel stakeholder analyses")
+
+        async for event in self.stakeholder_parallel.run_async(ctx):
+            yield event
+
 
         logger.info(f"[{self.name}] Running parallel stakeholder analyses")
 

@@ -1,0 +1,172 @@
+player_name,opponent,map_name,games,avg_kills,avg_deaths,first_kill_rate
+BABYBAY,NRG,bind,1,12.0,10.0,0.0
+BABYBAY,NRG,corrode,1,16.0,12.0,0.0
+BABYBAY,NRG,sunset,1,23.0,18.0,1.0
+C0M,NRG,ascent,1,5.0,14.0,0.0
+C0M,NRG,icebox,1,8.0,14.0,0.0
+Dantedeu5,NRG,haven,1,4.0,15.0,0.0
+Dantedeu5,NRG,lotus,1,9.0,18.0,0.0
+Dantedeu5,NRG,sunset,1,12.0,12.0,0.0
+Ethan,Cloud9,corrode,1,13.0,9.0,1.0
+Ethan,Cloud9,haven,1,16.0,20.0,0.0
+Ethan,Cloud9,lotus,1,23.0,16.0,0.0
+Ethan,G2 Esports,ascent,1,12.0,16.0,0.0
+Ethan,G2 Esports,bind,2,13.0,15.5,0.5
+Ethan,G2 Esports,corrode,1,14.0,17.0,0.0
+Ethan,G2 Esports,lotus,1,13.0,16.0,0.0
+Ethan,G2 Esports,sunset,1,15.0,15.0,0.0
+Ethan,KRÜ Esports,haven,1,20.0,11.0,0.0
+Ethan,KRÜ Esports,lotus,1,12.0,15.0,0.0
+Ethan,KRÜ Esports,sunset,1,9.0,15.0,1.0
+Ethan,Leviatán Esports,ascent,1,13.0,7.0,0.0
+Ethan,Leviatán Esports,icebox,1,14.0,5.0,0.0
+Ethan,Sentinels,corrode,1,12.0,12.0,0.0
+Ethan,Sentinels,icebox,1,16.0,16.0,0.0
+Ethan,Sentinels,lotus,1,18.0,8.0,0.0
+Ethan,Sentinels,sunset,1,15.0,16.0,0.0
+JAWGEMO,NRG,ascent,1,12.0,17.0,0.0
+JAWGEMO,NRG,bind,2,16.0,14.0,0.0
+JAWGEMO,NRG,corrode,1,18.0,18.0,0.0
+JAWGEMO,NRG,lotus,1,17.0,15.0,0.0
+JAWGEMO,NRG,sunset,1,16.0,19.0,0.0
+JonahP,NRG,ascent,1,15.0,16.0,0.0
+JonahP,NRG,bind,2,17.5,14.0,0.0
+JonahP,NRG,corrode,1,12.0,15.0,0.0
+JonahP,NRG,lotus,1,16.0,14.0,0.0
+JonahP,NRG,sunset,1,19.0,13.0,0.0
+Mazino,NRG,haven,1,8.0,13.0,0.0
+Mazino,NRG,lotus,1,6.0,17.0,0.0
+Mazino,NRG,sunset,1,15.0,10.0,0.0
+Melser,NRG,haven,1,7.0,15.0,0.0
+Melser,NRG,lotus,1,15.0,16.0,0.0
+Melser,NRG,sunset,1,10.0,6.0,0.0
+N4RRATE,NRG,corrode,1,7.0,15.0,0.0
+N4RRATE,NRG,icebox,1,27.0,21.0,0.0
+N4RRATE,NRG,lotus,1,6.0,14.0,1.0
+N4RRATE,NRG,sunset,1,18.0,13.0,1.0
+OXY,NRG,corrode,1,6.0,14.0,0.0
+OXY,NRG,haven,1,24.0,16.0,0.0
+OXY,NRG,lotus,1,22.0,19.0,0.0
+Sato,NRG,ascent,1,9.0,14.0,1.0
+Sato,NRG,icebox,1,7.0,15.0,0.0
+Shyy,NRG,haven,1,13.0,14.0,0.0
+Shyy,NRG,lotus,1,12.0,14.0,0.0
+Shyy,NRG,sunset,1,23.0,11.0,0.0
+Xeppaa,NRG,corrode,1,9.0,13.0,0.0
+Xeppaa,NRG,haven,1,21.0,18.0,0.0
+Xeppaa,NRG,lotus,1,13.0,19.0,0.0
+Zellsis,NRG,corrode,1,11.0,17.0,0.0
+Zellsis,NRG,icebox,1,14.0,15.0,0.0
+Zellsis,NRG,lotus,1,9.0,14.0,0.0
+Zellsis,NRG,sunset,1,13.0,14.0,0.0
+bang,NRG,corrode,1,12.0,14.0,0.0
+bang,NRG,icebox,1,12.0,16.0,0.0
+bang,NRG,lotus,1,6.0,14.0,0.0
+bang,NRG,sunset,1,20.0,14.0,0.0
+brawk,Cloud9,corrode,1,18.0,7.0,0.0
+brawk,Cloud9,haven,1,13.0,17.0,0.0
+brawk,Cloud9,lotus,1,21.0,12.0,1.0
+brawk,G2 Esports,ascent,1,20.0,13.0,1.0
+brawk,G2 Esports,bind,2,12.0,16.0,0.0
+brawk,G2 Esports,corrode,1,10.0,15.0,0.0
+brawk,G2 Esports,lotus,1,8.0,16.0,0.0
+brawk,G2 Esports,sunset,1,10.0,17.0,0.0
+brawk,KRÜ Esports,haven,1,11.0,10.0,0.0
+brawk,KRÜ Esports,lotus,1,22.0,10.0,1.0
+brawk,KRÜ Esports,sunset,1,10.0,16.0,0.0
+brawk,Leviatán Esports,ascent,1,16.0,7.0,0.0
+brawk,Leviatán Esports,icebox,1,17.0,6.0,0.0
+brawk,Sentinels,corrode,1,19.0,12.0,0.0
+brawk,Sentinels,icebox,1,25.0,15.0,1.0
+brawk,Sentinels,lotus,1,19.0,6.0,0.0
+brawk,Sentinels,sunset,1,19.0,19.0,0.0
+johnqt,NRG,corrode,1,17.0,11.0,0.0
+johnqt,NRG,icebox,1,8.0,18.0,0.0
+johnqt,NRG,lotus,1,16.0,12.0,0.0
+johnqt,NRG,sunset,1,18.0,13.0,0.0
+keznitdeuS,NRG,haven,1,16.0,16.0,1.0
+keznitdeuS,NRG,lotus,1,22.0,15.0,0.0
+keznitdeuS,NRG,sunset,1,16.0,14.0,0.0
+kiNgg,NRG,ascent,1,3.0,13.0,0.0
+kiNgg,NRG,icebox,1,8.0,14.0,0.0
+leaf,NRG,ascent,1,20.0,15.0,0.0
+leaf,NRG,bind,1,15.0,19.0,0.0
+leaf,NRG,lotus,1,13.0,12.0,0.0
+mada,Cloud9,corrode,1,21.0,5.0,0.0
+mada,Cloud9,haven,1,15.0,20.0,0.0
+mada,Cloud9,lotus,1,19.0,16.0,0.0
+mada,G2 Esports,ascent,1,17.0,17.0,0.0
+mada,G2 Esports,bind,2,13.0,18.0,0.0
+mada,G2 Esports,corrode,1,17.0,16.0,0.0
+mada,G2 Esports,lotus,1,13.0,19.0,0.0
+mada,G2 Esports,sunset,1,26.0,18.0,0.0
+mada,KRÜ Esports,haven,1,14.0,8.0,0.0
+mada,KRÜ Esports,lotus,1,13.0,15.0,0.0
+mada,KRÜ Esports,sunset,1,13.0,16.0,0.0
+mada,Leviatán Esports,ascent,1,14.0,7.0,0.0
+mada,Leviatán Esports,icebox,1,15.0,6.0,0.0
+mada,Sentinels,corrode,1,17.0,13.0,0.0
+mada,Sentinels,icebox,1,18.0,18.0,0.0
+mada,Sentinels,lotus,1,10.0,13.0,0.0
+mada,Sentinels,sunset,1,13.0,19.0,0.0
+mitch,NRG,corrode,1,7.0,14.0,0.0
+mitch,NRG,haven,1,4.0,16.0,0.0
+mitch,NRG,lotus,1,11.0,18.0,0.0
+neT,NRG,corrode,1,6.0,12.0,0.0
+neT,NRG,haven,1,18.0,15.0,1.0
+neT,NRG,lotus,1,7.0,20.0,0.0
+okeanos,NRG,ascent,1,12.0,13.0,0.0
+okeanos,NRG,icebox,1,8.0,15.0,0.0
+s0m,Cloud9,corrode,1,7.0,6.0,0.0
+s0m,Cloud9,haven,1,19.0,16.0,0.0
+s0m,Cloud9,lotus,1,17.0,13.0,0.0
+s0m,G2 Esports,ascent,1,12.0,17.0,0.0
+s0m,G2 Esports,bind,2,17.5,15.5,0.0
+s0m,G2 Esports,corrode,1,22.0,13.0,0.0
+s0m,G2 Esports,lotus,1,16.0,15.0,0.0
+s0m,G2 Esports,sunset,1,22.0,18.0,0.0
+s0m,KRÜ Esports,haven,1,12.0,10.0,0.0
+s0m,KRÜ Esports,lotus,1,14.0,15.0,0.0
+s0m,KRÜ Esports,sunset,1,8.0,15.0,0.0
+s0m,Leviatán Esports,ascent,1,15.0,8.0,0.0
+s0m,Leviatán Esports,icebox,1,14.0,8.0,0.0
+s0m,Sentinels,corrode,1,13.0,14.0,0.0
+s0m,Sentinels,icebox,1,11.0,21.0,0.0
+s0m,Sentinels,lotus,1,8.0,11.0,0.0
+s0m,Sentinels,sunset,1,10.0,20.0,0.0
+skuba,Cloud9,corrode,1,8.0,8.0,0.0
+skuba,Cloud9,haven,1,17.0,16.0,0.0
+skuba,Cloud9,lotus,1,11.0,16.0,0.0
+skuba,G2 Esports,ascent,1,14.0,14.0,0.0
+skuba,G2 Esports,bind,2,15.0,14.5,0.0
+skuba,G2 Esports,corrode,1,19.0,15.0,0.0
+skuba,G2 Esports,lotus,1,17.0,13.0,1.0
+skuba,G2 Esports,sunset,1,10.0,17.0,0.0
+skuba,KRÜ Esports,haven,1,16.0,9.0,0.0
+skuba,KRÜ Esports,lotus,1,19.0,9.0,0.0
+skuba,KRÜ Esports,sunset,1,13.0,14.0,0.0
+skuba,Leviatán Esports,ascent,1,9.0,7.0,0.0
+skuba,Leviatán Esports,icebox,1,13.0,11.0,1.0
+skuba,Sentinels,corrode,1,14.0,9.0,1.0
+skuba,Sentinels,icebox,1,17.0,18.0,0.0
+skuba,Sentinels,lotus,1,14.0,8.0,0.0
+skuba,Sentinels,sunset,1,14.0,15.0,0.0
+tex,NRG,ascent,1,7.0,13.0,0.0
+tex,NRG,icebox,1,5.0,15.0,0.0
+trent,NRG,ascent,1,18.0,13.0,0.0
+trent,NRG,bind,2,15.0,14.0,0.0
+trent,NRG,corrode,1,8.0,17.0,0.0
+trent,NRG,lotus,1,15.0,13.0,0.0
+trent,NRG,sunset,1,10.0,18.0,0.0
+v1c,NRG,corrode,1,7.0,14.0,0.0
+v1c,NRG,haven,1,22.0,15.0,0.0
+v1c,NRG,lotus,1,20.0,16.0,0.0
+valyn,NRG,ascent,1,12.0,14.0,0.0
+valyn,NRG,bind,2,17.5,14.0,0.5
+valyn,NRG,corrode,1,22.0,20.0,1.0
+valyn,NRG,lotus,1,18.0,14.0,0.0
+valyn,NRG,sunset,1,17.0,15.0,0.0
+zekken,NRG,corrode,1,13.0,18.0,0.0
+zekken,NRG,icebox,1,27.0,18.0,0.0
+zekken,NRG,lotus,1,9.0,15.0,0.0
+zekken,NRG,sunset,1,20.0,17.0,0.0
