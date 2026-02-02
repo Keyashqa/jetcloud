@@ -228,5 +228,6 @@ dist-ssr
 
 .venv
 
-.env
+
 scouting_outputs
+.env
