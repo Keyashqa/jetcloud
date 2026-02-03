@@ -94,6 +94,7 @@ jetbrains/
 
 1.  Navigate to the backend directory:
     ```bash
+    cd jetcloud
     cd backend
     ```
 2.  Create and activate a virtual environment:
@@ -123,6 +124,7 @@ jetbrains/
 
 1.  Open a new terminal and navigate to the frontend directory:
     ```bash
+    cd jetcloud
     cd frontend
     ```
 2.  Install dependencies:
