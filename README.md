@@ -109,6 +109,7 @@ jetbrains/
     ```
 4.  Configure Environment (`backend/.env`):
     ```ini
+    GOOGLE_GENAI_USE_VERTEXAI=True
     GOOGLE_CLOUD_PROJECT=your-gcp-project-id
     GOOGLE_CLOUD_LOCATION=us-central1
     GOOGLE_API_KEY=your-gemini-api-key
