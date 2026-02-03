@@ -114,6 +114,7 @@ jetbrains/
     GOOGLE_API_KEY=your-gemini-api-key
     GRID_API_KEY=your-grid-api-key
     ```
+    Enable all permissions to use Vertex AI from Google Cloud Console
 5.  Start the Server:
     ```bash
     uvicorn server:app --reload
