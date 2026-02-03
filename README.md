@@ -13,6 +13,8 @@
 
 ## 📚 Overview
 
+Note : Re run the backend server after scouting a team to start over or incase of any unexpected error
+
 This project combines **JetCloud** (Frontend) and **Scout** (Backend) to create a comprehensive Esports Strategic Intelligence Platform.
 
 *   **JetCloud** is the visual dashboard designed to give competitive teams the upper hand. It aggregates, processes, and visualizes opponent data into actionable strategic insights tailored for different team roles (Coaches, Analysts, Managers).
